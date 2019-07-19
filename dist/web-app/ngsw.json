@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.606911ed7e3cb6dc0c55.js",
+        "/polyfills.3b76b6f1cb9cd26a49c8.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.39459649a892cc1c2f1c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/images/MifosX_logo.png",
+        "/assets/images/MifosX_logoSmall.png",
+        "/assets/images/cover_image.jpg",
+        "/assets/images/mifos-logo-flat.png",
+        "/assets/images/mifos_lg-logo.jpg",
+        "/assets/images/user_placeholder.png",
+        "/assets/mock/user.mock.json",
+        "/assets/particles.json",
+        "/assets/styles/_colours.scss",
+        "/assets/styles/_helper.scss",
+        "/assets/styles/_loader.scss",
+        "/assets/styles/_width-height.scss",
+        "/assets/styles/_z-index.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/images/MifosX_logo.png": "fc66de5965e6054007a0e0c9e68f24f1ee250c21",
+    "/assets/images/MifosX_logoSmall.png": "ebd340185b4888fdbe26b364303d2c072412b46e",
+    "/assets/images/cover_image.jpg": "51773ede81be7a39c6c7a742b4f59ff0e916af48",
+    "/assets/images/mifos-logo-flat.png": "998100b024c81bac0fd272134f282e410c96ad8a",
+    "/assets/images/mifos_lg-logo.jpg": "c316949191be5b355cfc3bc803516cca29ed1265",
+    "/assets/images/user_placeholder.png": "688be4adfb344e0f9662a40f59788f39e7b907af",
+    "/assets/mock/user.mock.json": "aa4285d6c1c62088aa48cae021d8ac986d3738cf",
+    "/assets/particles.json": "47631e728fd79f5422daa0c178738e9e3ec40a3e",
+    "/assets/styles/_colours.scss": "945fe246977e6da1428a1e1edfa5c7ca4748c56e",
+    "/assets/styles/_helper.scss": "0d0de522b13de63f2c5adceb40e38d3a294ac71c",
+    "/assets/styles/_loader.scss": "e5b36b96162920326c5d9daac0e6a5e1f188c0c6",
+    "/assets/styles/_width-height.scss": "b388b593c298e8799737ea2829275ffac06ce113",
+    "/assets/styles/_z-index.scss": "18048038bb66d1375e3a8c11cee30b7460b47191",
+    "/favicon.ico": "31d1d887b9dec1f49614f289d6855f5ffa7c0902",
+    "/index.html": "e524527c6a8bb629b8f3ae82bc2eeab4fe1fde1f",
+    "/main.606911ed7e3cb6dc0c55.js": "b9ebbae12fbe4643923daaf8d4797939358d1c64",
+    "/polyfills.3b76b6f1cb9cd26a49c8.js": "22e09d004336956ba131f499558ee74379a8e880",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.39459649a892cc1c2f1c.css": "580678967fd02e4176465594c216ff263b99522b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
