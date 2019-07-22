@@ -23,7 +23,7 @@ export class ClientsService {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
     return this.http.get(
-        'https://demo.openmf.org/fineract-provider/api/v1/clients?tenantIdentifier=default&pretty=true', {
+        'https://10.127.127.147:8443/fineract-provider/api/v1/clients?tenantIdentifier=default&pretty=true', {
           headers: headers
         })
       .pipe(
@@ -39,7 +39,7 @@ export class ClientsService {
   getClientId(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '?tenantIdentifier=default&pretty=true', {
           headers: headers
         })
@@ -57,7 +57,7 @@ export class ClientsService {
   getClientAccounts(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/accounts' + '?tenantIdentifier=default&pretty=true', {
           headers: headers
         })
@@ -75,7 +75,7 @@ export class ClientsService {
   getClientCharges(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/charges' + '?tenantIdentifier=default&pretty=true', {
           headers: headers
         })
@@ -93,7 +93,7 @@ export class ClientsService {
   getClientAddress(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/client/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/client/' + clientId +
         '/addresses' + '?tenantIdentifier=default&pretty=true', {
           headers: headers
         })
@@ -111,7 +111,7 @@ export class ClientsService {
   getClientNote(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/notes' + '?tenantIdentifier=default&pretty=true', {
           headers: headers
         })
@@ -130,7 +130,7 @@ export class ClientsService {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
     const body = JSON.stringify(notes);
-    return this.http.post('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.post('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/notes' + '?tenantIdentifier=default&pretty=true', notes, {
           headers: headers
         })
@@ -146,7 +146,7 @@ export class ClientsService {
   getClientAddressTemplate() {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/client/' +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/client/' +
         'addresses/template?tenantIdentifier=default', {
           headers: headers
         })
@@ -171,7 +171,7 @@ export class ClientsService {
       headers: headers,
       params: params,
     });
-    return this.http.post('https://demo.openmf.org/fineract-provider/api/v1/client/' + clientId +
+    return this.http.post('https://10.127.127.147:8443/fineract-provider/api/v1/client/' + clientId +
         '/addresses?' + '&tenantIdentifier=default&pretty=true', body,
         options)
       .pipe(
@@ -193,7 +193,7 @@ export class ClientsService {
       headers: headers,
       params: params,
     });
-    return this.http.put('https://demo.openmf.org/fineract-provider/api/v1/client/' + clientId +
+    return this.http.put('https://10.127.127.147:8443/fineract-provider/api/v1/client/' + clientId +
         '/addresses?' + 'tenantIdentifier=default', body,
         options)
       .pipe(
@@ -208,7 +208,7 @@ export class ClientsService {
   getClientIdentifierTemplate(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/identifiers/template?tenantIdentifier=default', {
           headers: headers
         })
@@ -226,7 +226,7 @@ export class ClientsService {
   getClientIdentifiers(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/identifiers/?tenantIdentifier=default', {
           headers: headers
         })
@@ -244,7 +244,7 @@ export class ClientsService {
   postClientIdentifier(clientId: number, body: any) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.post('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.post('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/identifiers/?tenantIdentifier=default', body, {
           headers: headers
         })
@@ -260,7 +260,7 @@ export class ClientsService {
   deleteClientIdentifier(clientId: number, identifierId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.delete('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.delete('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/identifiers/' + identifierId + '/?tenantIdentifier=default', {
           headers: headers
         })
@@ -279,7 +279,7 @@ export class ClientsService {
     headers.append('Accept', 'multipart/form-data');
     body = JSON.stringify(body);
 
-    return this.http.post('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.post('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/documents/?tenantIdentifier=default', body, {
           headers: headers
         })
@@ -295,7 +295,7 @@ export class ClientsService {
   getClientDocuments(clientId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/documents/?tenantIdentifier=default', {
           headers: headers
         })
@@ -311,7 +311,7 @@ export class ClientsService {
   deleteClientDocuments(clientId: number, documentId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.delete('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.delete('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/documents/' + documentId + '/?tenantIdentifier=default', {
           headers: headers
         })
@@ -327,7 +327,7 @@ export class ClientsService {
   downloadClientDocuments(clientId: number, documentId: number) {
     const headers = new Headers(); // tslint:disable-line
     this.createAuthorizationHeader(headers);
-    return this.http.get('https://demo.openmf.org/fineract-provider/api/v1/clients/' + clientId +
+    return this.http.get('https://10.127.127.147:8443/fineract-provider/api/v1/clients/' + clientId +
         '/documents/' + documentId + '/attachment/?tenantIdentifier=default', {
           headers: headers
         })
